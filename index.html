@@ -87,7 +87,17 @@
       flex-wrap: wrap;
       gap: 0.6rem;
     }
-
+    .profile-img { 
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  border: 3px solid var(--accent);
+  object-fit: cover;
+  margin-bottom: 1rem;
+  
+  /* Prevents aggressive downscale blurring */
+  image-rendering: -webkit-optimize-contrast;
+}
     .skill-tag {
       background: #334155;
       color: var(--text);
